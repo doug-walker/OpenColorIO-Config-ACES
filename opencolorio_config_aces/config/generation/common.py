@@ -262,7 +262,7 @@ def generate_config(
         config.setVersion(data.profile_version.major, data.profile_version.minor)
 
     if ocio.GetVersionHex() >= 0x02060000 and data.profile_version >= Version(2, 6):
-        config.setUseDisplayViewAliases(True)
+        config.setUseDisplayAliases(True)
 
     if data.name is not None:
         config.setName(data.name)
